@@ -1,0 +1,63 @@
+      @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN+Guides&display=swap");
+      .playwrite-in-guides-regular {
+        font-family: "Playwrite IN Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Playwrite IN Guides", cursive;
+      }
+      .bg {
+        background-image: url("floating-cogs.svg");
+        background-color: #f0f8ff;
+      }
+      .container {
+        text-align: center;
+        margin-top: 20%;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-bottom: 20%;
+        padding: 20px;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        background-color: #f0f8ff;
+      }
+      .count {
+        font-size: 90px;
+        font-weight: bold;
+        color: #000000;
+        display: block;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 48px;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+      input {
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 50%;
+        background-color: #ffffff;
+      }
+      input:focus {
+        outline: none;
+        box-shadow: 0 0 5px lightblue;
+      }
+      input:hover {
+        width: 200%;
+        justify-content: start;
+        align-items: start;
+        display: flex;
+        background-color: var(--hover-color, #3498db); /* Default color */
+        cursor: pointer;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        text-align: start;
+      }
