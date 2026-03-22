@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - ICT12367 SPU</title>
+    <!-- เรียกใช้ Tailwind CSS ผ่าน CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- นำเข้าฟอนต์ Kanit เพื่อให้อ่านภาษาไทยได้สวยงาม -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen text-gray-800">
+
+    <!-- แถบนำทาง (Navbar) -->
+    <nav class="bg-[#333e4f] text-white py-3 px-6 shadow-md">
+        <div class="container mx-auto max-w-5xl flex justify-between items-center">
+            <div class="font-bold text-lg tracking-wide">ICT12367 SPU</div>
+            <div class="space-x-6 text-sm">
+                <a href="index" class="hover:text-gray-300">หน้าแรก</a>
+                <a href="form" class="hover:text-gray-300">ลงทะเบียน</a>
+                <a href="about" class="hover:text-gray-300">เกี่ยวกับเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- รูปภาพแบนเนอร์ (Hero Section) -->
+    <div class="relative h-64 bg-gray-900 w-full max-w-5xl mx-auto">
+        <!-- ใช้รูปภาพ Placeholder สำหรับเมล็ดกาแฟ -->
+        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Banner" class="w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-white text-2xl md:text-3xl font-bold text-center drop-shadow-lg px-4">ยินดีต้อนรับสู่เว็บไซต์ของรายวิชา ICT12367</h1>
+        </div>
+    </div>
+
+    <!-- ส่วนเนื้อหาหลัก -->
+    <main class="container mx-auto px-4 py-8 flex-grow max-w-4xl">
+        
+        <h2 class="text-purple-600 text-center md:text-lg font-medium mb-8">
+            ยินดีต้อนรับสู่รายวิชา ICT12367 การจัดการจัดการฐานข้อมูลสำหรับการพัฒนาเว็บแอปพลิเคชัน<br>เพื่อความมั่นคงปลอดภัย
+        </h2>
+
+        <!-- รายการสินค้า/สถานที่ (Cards) -->
+        <div class="space-y-4 mb-10">
+            <!-- Card 1 -->
+            <div class="border border-gray-300 rounded p-4 flex flex-col sm:flex-row gap-4 shadow-sm hover:shadow transition">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mountain view" class="w-full sm:w-48 h-32 object-cover rounded">
+                <div>
+                    <h3 class="font-semibold mb-2">สินค้า</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex accusamus nam amet eos quae quaerat, enim numquam reiciendis doloremque et, magnam, nobis recusandae aliquam id sapiente nesciunt consequuntur repellat omnis blanditiis.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="border border-gray-300 rounded p-4 flex flex-col sm:flex-row gap-4 shadow-sm hover:shadow transition">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mountain view" class="w-full sm:w-48 h-32 object-cover rounded">
+                <div>
+                    <h3 class="font-semibold mb-2">บริการ</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex accusamus nam amet eos quae quaerat, enim numquam reiciendis doloremque et, magnam, nobis recusandae aliquam id sapiente nesciunt consequuntur repellat omnis blanditiis.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="border border-gray-300 rounded p-4 flex flex-col sm:flex-row gap-4 shadow-sm hover:shadow transition">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mountain view" class="w-full sm:w-48 h-32 object-cover rounded">
+                <div>
+                    <h3 class="font-semibold mb-2">เกี่ยวกับเรา</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex accusamus nam amet eos quae quaerat, enim numquam reiciendis doloremque et, magnam, nobis recusandae aliquam id sapiente nesciunt consequuntur repellat omnis blanditiis.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- แผนที่ Google Map -->
+        <div class="border border-gray-300 rounded shadow-sm overflow-hidden">
+            <div class="bg-gray-50 px-4 py-2 border-b border-gray-200">
+                <h3 class="font-semibold text-gray-700">แสดงแผนที่ใน Google Map</h3>
+            </div>
+            <div class="p-2">
+                <!-- ฝัง Google Map ของ มหาวิทยาลัยศรีปทุม (สามารถเปลี่ยน iframe src ได้ตามต้องการ) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.3315758079234!2d100.58499097585094!3d13.842551495475176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d1e111be769%3A0x4332e8cd6aec8c31!2sSripatum%20University!5e0!3m2!1sen!2sth!4v1710000000000!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ส่วนท้าย (Footer) -->
+    <footer class="bg-[#333e4f] text-gray-300 text-center py-4 text-xs mt-auto">
+        <div class="container mx-auto">
+            © 2024 ICT12367 SPU | Information Technology
+        </div>
+    </footer>
+
+</body>
+</html>
